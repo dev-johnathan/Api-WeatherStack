@@ -6,9 +6,9 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 ## Execução (Código Fonte)
 
-Deverá ser desenvolvida uma API, uma com **Docker**. Para esta API, utilizaremos o mesmo processo da sprint 2, mas buscando uma nova API.
+Deverá ser desenvolvida uma API sobre **Docker**. Para esta API, utilizaremos o mesmo processo da sprint 2, mas buscando uma nova API. 
 
-Faça um sistema em JavaScript/NodeJS que produza uma interface para consulta de API pública.
+Nesta API, deverá estar executando um sistema em JavaScript/NodeJS que produza uma interface para consulta de uma API pública.
 
 **Especificações**:
 
