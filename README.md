@@ -12,7 +12,7 @@ Faça um sistema em JavaScript/NodeJS que produza uma interface para consulta de
 
 **Especificações**:
 
-1. Escolher uma API pública (em <https://any-api.com/> , ou qualquer outra, e **deve ser diferente das demais equipes**) para cada tecnologia;
+1. Escolher uma API pública (em <https://any-api.com/> , ou qualquer outra, e **deve ser diferente das demais equipes**);
 2. Consumir esta API utilizando NodeJS;
 3. Subir esta API utilizando Docker;
 4. Criar uma página html para fazer consultas à API (pode ser bem simples, o layout não será avaliado).
