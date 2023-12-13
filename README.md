@@ -63,4 +63,4 @@ Execução em Docker, dentro da AWS Cloud.
 - 🔨 Disponibilizar o código fonte desenvolvido (Sugestão: pasta `src`);
 - Colocar o arquivo com a configuração nginx (se utilizado).
 
-* O prazo de entrega é até às 10h30 do dia 26/12/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-IFSP-IFGOIANO/sprint-3-pb-aws-ifsp-ifgoiano](https://github.com/Compass-pb-aws-2023-IFSP-IFGOIANO/sprint-3-pb-aws-ifsp-ifgoiano)).
+* O prazo de entrega é até às 9h do dia 26/12/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-IFSP-IFGOIANO/sprint-3-pb-aws-ifsp-ifgoiano](https://github.com/Compass-pb-aws-2023-IFSP-IFGOIANO/sprint-3-pb-aws-ifsp-ifgoiano)).
