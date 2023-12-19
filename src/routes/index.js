@@ -15,5 +15,20 @@ router.get("/", async (req, res) => {
 });
 
 
+// Rota para buscar o clima
+router.post("/weather-details", async (req, res) => {
+  try {
+    const city = req.body.city;
+    const apiUrl = `${weatherStackURL}?access_key=${apiKey}&query=${city}`;
+
+    const response = await axios.get(apiUrl);
+    const weatherData = response.data;
+
+    res.render("details", { weatherData, city });
+  } catch (error) {
+    res.render("error", { error: "Ocorreu um erro ao obter informações meteorológicas. Tente novamente mais tarde." });
+  }
+});
+
 
 module.exports = router;
