@@ -1,0 +1,18 @@
+<div>
+  <h1>Detalhes do Clima para {{weatherData.location.name}}, {{weatherData.location.region}}, {{weatherData.location.country}}</h1>
+  {{#if weatherData.current}}
+    <h2>Condição atual: {{weatherData.current.weather_descriptions.[0]}}</h2>
+    <img src="{{weatherData.current.weather_icons.[0]}}" alt="Weather Icon">
+    <p>Temperatura: {{weatherData.current.temperature}}°C</p>
+    <p>Sensação térmica: {{weatherData.current.feelslike}}°C</p>
+    <p>Umidade: {{weatherData.current.humidity}}%</p>
+    <p>Velocidade do vento: {{weatherData.current.wind_speed}} km/h</p>
+    <p>Direção do vento: {{weatherData.current.wind_dir}}</p>
+    <p>Pressão atmosférica: {{weatherData.current.pressure}} mb</p>
+    <p>Índice UV: {{weatherData.current.uv_index}}</p>
+    <p>Visibilidade: {{weatherData.current.visibility}} km</p>
+    <p>Horário local: {{weatherData.location.localtime}}</p>
+  {{else}}
+    <p>{{error}}</p>
+  {{/if}}
+</div>
