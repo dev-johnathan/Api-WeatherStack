@@ -1,18 +1,32 @@
-<div>
-  <h1>Detalhes do Clima para {{weatherData.location.name}}, {{weatherData.location.region}}, {{weatherData.location.country}}</h1>
-  {{#if weatherData.current}}
-    <h2>Condição atual: {{weatherData.current.weather_descriptions.[0]}}</h2>
-    <img src="{{weatherData.current.weather_icons.[0]}}" alt="Weather Icon">
-    <p>Temperatura: {{weatherData.current.temperature}}°C</p>
-    <p>Sensação térmica: {{weatherData.current.feelslike}}°C</p>
-    <p>Umidade: {{weatherData.current.humidity}}%</p>
-    <p>Velocidade do vento: {{weatherData.current.wind_speed}} km/h</p>
-    <p>Direção do vento: {{weatherData.current.wind_dir}}</p>
-    <p>Pressão atmosférica: {{weatherData.current.pressure}} mb</p>
-    <p>Índice UV: {{weatherData.current.uv_index}}</p>
-    <p>Visibilidade: {{weatherData.current.visibility}} km</p>
-    <p>Horário local: {{weatherData.location.localtime}}</p>
-  {{else}}
-    <p>{{error}}</p>
-  {{/if}}
+<div class="row mt-5">
+  <div class="col-md-8 offset-md-2">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="text-center">Detalhes do Clima para {{weatherData.location.name}}, {{weatherData.location.region}}, {{weatherData.location.country}}</h3>
+      </div>
+      <div class="card-body">
+        {{#if weatherData.current}}
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Condição atual: {{weatherData.current.weather_descriptions.[0]}}</h4>
+              <img src="{{weatherData.current.weather_icons.[0]}}" alt="Weather Icon" class="img-fluid mb-3">
+              <p>Temperatura: {{weatherData.current.temperature}}°C</p>
+              <p>Sensação térmica: {{weatherData.current.feelslike}}°C</p>
+              <p>Umidade: {{weatherData.current.humidity}}%</p>
+            </div>
+            <div class="col-md-6">
+              <p>Velocidade do vento: {{weatherData.current.wind_speed}} km/h</p>
+              <p>Direção do vento: {{weatherData.current.wind_dir}}</p>
+              <p>Pressão atmosférica: {{weatherData.current.pressure}} mb</p>
+              <p>Índice UV: {{weatherData.current.uv_index}}</p>
+              <p>Visibilidade: {{weatherData.current.visibility}} km</p>
+              <p>Horário local: {{weatherData.location.localtime}}</p>
+            </div>
+          </div>
+        {{else}}
+          <p class="text-center">{{error}}</p>
+        {{/if}}
+      </div>
+    </div>
+  </div>
 </div>
