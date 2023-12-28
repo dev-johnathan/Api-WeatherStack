@@ -1,8 +1,6 @@
 # ClimaTempo
 Uma API para visualizar o clima na sua, ou qualquer cidade em tempo real.
 
-Link para utilização: http://54.242.154.207:3000/
-
 ## 🔧 Pré-requisitos para instalação
 Obtenha uma chave da API ao se registrar em https://weatherstack.com/
 
